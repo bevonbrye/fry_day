@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import './Restaurant.scss'
 
 // Variable hold yelp API data: 
+
 const restaurant = {
 
     imageSrc: 'https://https://imgur.com/XVdFqZ3.jpg',
@@ -18,8 +19,10 @@ const restaurant = {
 
 //class component renders the restaurant information: 
 
-class Restaurant extends React.Component { 
-    render() { 
+const Restaurant = () => { 
+
+    const [restaurant, setRestaurant] = useState(restaurant)
+    
         return(
         <div className='Restaurant'>
             <div className='img-container'>
@@ -41,6 +44,6 @@ class Restaurant extends React.Component {
         </div>
         )       
   }   
-}
+
 
 export default Restaurant

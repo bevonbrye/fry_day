@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import UserModel from '../models/user'
+import Jumbotron from 'react-bootstrap/Jumbotron';
+
 
 const Register = props => {
   const [name, setName] = useState('');
@@ -34,7 +36,7 @@ const Register = props => {
   }
 
   return (
-    <div>
+    <div> <Jumbotron>
       <h4>Register</h4>
       <form onSubmit={ handleSubmit }>
         <div className="form-group">
@@ -83,6 +85,7 @@ const Register = props => {
         </div>
         <button type="submit">Register</button>
       </form>
+      </Jumbotron>
     </div>
   )
 }

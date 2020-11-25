@@ -3,9 +3,9 @@ import "./RestaurantList.scss"
 import Restaurant from './Restaurant'
 
 
-class RestaurantList extends React.component{ 
-    render() { 
-        <div className= 'RestaurantList'>
+const RestaurantList = (props) => { 
+    return (
+    <div className= 'RestaurantList'>
             <Restaurant />
             <Restaurant />
             <Restaurant />
@@ -13,7 +13,7 @@ class RestaurantList extends React.component{
             <Restaurant />
             <Restaurant />
         </div>
-    }
+    )
 
 }
 

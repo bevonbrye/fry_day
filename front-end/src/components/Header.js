@@ -6,7 +6,7 @@ const Header = (props) => {
   return (
     <header>
       <div className="logo">
-        <Link to={'/'}>Home!</Link>
+        <Link to={'/'}> logo goes here </Link>
       </div>
       <div className="links">
         <ul>
@@ -17,9 +17,9 @@ const Header = (props) => {
             </>
           :
             <>
-              <li><Link to={'/register'}>Register</Link></li>
               <li><Link to={'/login'}>Login</Link></li>
               <li><Link to={'/About'}>About</Link></li>
+              <button><Link to={'/register'}>Sign-up</Link></button>
 
             </>
           }
