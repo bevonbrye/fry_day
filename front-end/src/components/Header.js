@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom'
 import './Header.scss'
-import {Navbar, Nav, Container} from 'react-bootstrap'
+import {Navbar, Nav, Container, Form, FormControl, Button} from 'react-bootstrap'
 
 const Header = (props) => {
   return (
@@ -12,7 +12,7 @@ const Header = (props) => {
 <Container>
             <Navbar expand="xl">
                 <Navbar.Brand href="/">
-                Fry
+                Fry 
                     <img
                         alt=""
                         src="/img/fries.png"
@@ -28,6 +28,10 @@ const Header = (props) => {
                     <Nav className="ml-auto">
                     { props.currentUser ?
                     <>
+
+                    
+
+                    
                         <Nav.Item>
                             <Nav.Link href='/profile'> Profile</Nav.Link>
                         </Nav.Item>
@@ -35,6 +39,10 @@ const Header = (props) => {
                         <Nav.Item>
                             <Nav.Link href="/logout" onClick={ props.logout } > Logout </Nav.Link>
                         </Nav.Item>
+                        <Form inline style={{display:'flex', justifyContent:'center', color:'black'}}>
+                            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                            <Button variant="outline-success">Search</Button>
+                        </Form>
                     </>
                     :
                     <>

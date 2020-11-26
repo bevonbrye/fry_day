@@ -1,11 +1,19 @@
 import React from 'react'
-import NavBar from '../components/NavBar/NavBar'
+import { Container, Col, Row} from 'react-bootstrap'
+import SearchResult from '../components/SearchResults/SearchResult'
+
 
 
 export default function Results() {
     return (
         <div>
-            <NavBar/>
+     <Container>
+            <Row>
+                <Col><SearchResult/></Col>
+                <Col>2 of 3</Col>
+                <Col>3 of 3</Col>
+            </Row>
+    </Container>
         </div>
     )
 }

@@ -19,6 +19,7 @@ function Search() {
               <input type="text" name="name" placeholder="Search by location" />
             <button className='button'><FontAwesomeIcon icon={faSearch} /> </button>
         </form>
+        
         </div>
     )
 }
