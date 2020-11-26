@@ -1,11 +1,20 @@
 import React from 'react';
 import './Search.scss'
+import {Form, FormControl, Button} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
+
+
 function Search() {
     return (
+      
         <div>
+        
+          <Form inline style={{display:'flex', justifyContent:'center', alignItems:'center'}} name="results">
+      <FormControl type="text" placeholder="Search by location" className="mr-sm-2" />
+      <Button  variant="outline-success" >Search</Button>
+    </Form>
          <form className='SearchBar'> 
               <input type="text" name="name" placeholder="Search by location" />
             <button className='button'><FontAwesomeIcon icon={faSearch} /> </button>

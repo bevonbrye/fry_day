@@ -5,7 +5,7 @@ import Routes from './config/Routes'
 import './App.css'
 import UserModel from './models/user'
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   const [currentUser, setCurrentUser] = useState(localStorage.getItem('id'))
