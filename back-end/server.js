@@ -44,15 +44,39 @@ app.use(passport.session())
 
 // middleware - API routes
 app.use('/api/v1/auth', routes.auth)
+    //routes allows us to handle second piece of middleware
+app.use((req, res, next) => {
+    //sends to the next route handler: 
+    next();
+})
 
+//routes: 
 
-//create routes: 
-
-app.get('/', (req, res) => {
+//gets all restaurants 
+app.get('/getAllRestaurants', (req, res) => {
     res.json({
-
+        status: 'success',
+        data: {
+            restaurant: ['bevs']
+        }
     })
 });
+
+
+//get one restaurant: 
+
+app.get('/api/v1/restaurants/:restaurantId', (req, res) => {
+    console.log(req.params)
+
+})
+
+// create a restaurant: 
+
+app.post('/api/v1/restaurants', (req, res) => {
+    console.log(req.params)
+
+})
+
 
 
 
