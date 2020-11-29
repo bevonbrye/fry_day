@@ -1,9 +1,14 @@
 import React from 'react'
 import { Container, Image, Col, Row, Card, ListGroup} from 'react-bootstrap'
 import Rating from 'react-rating'
+
+
+
+
 function SearchResult() {
     return (
         <div>
+
     <Container style={{marginTop:'1rem'}}>
         <Card style={{padding:'10px'}}>
             <Row>

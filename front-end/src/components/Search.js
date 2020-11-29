@@ -13,10 +13,10 @@ function Search(props) {
   //  const [term, setTerm] = useState(props.term || '') //set to empty string because nothing has been passed 
    const [location, setLocation] = useState(props.location || '')
    let history = useHistory();
-  const urlEncodedLocation = encodeURI(location);
+   const urlEncodedLocation = encodeURI(location);
 
    function handleSubmit(e){ 
-    history.push( `/Results?find_loc=${urlEncodedLocation}`);  
+    history.push( `/Results?find_desc=fries&find_loc=${urlEncodedLocation}`);  
     //never forget: if the event does not get explicitly handled, its default action should not be taken as it normally would be.
      e.preventDefault();
    } 
