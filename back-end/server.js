@@ -19,23 +19,23 @@ app.use(express.json())
 
 // middleware - cors
 const corsOptions = {
-  // from which URLs do we want to accept requests
-  origin: ['http://localhost:3000'],
-  credentials: true, // allow the session cookie to be sent to and from the client
-  optionsSuccessStatus: 204
+    // from which URLs do we want to accept requests
+    origin: ['http://localhost:3000'],
+    credentials: true, // allow the session cookie to be sent to and from the client
+    optionsSuccessStatus: 204
 }
 
 app.use(cors(corsOptions))
 
 // middleware - session config
 app.use(session({
-  // session is stored in the DB
-  secret: "REPLACE_THIS_WITH_A_REAL_SECRET",
-  resave: false, // will not resave sessions
-  saveUninitialized: false, // only create a session when a property is added to the session
-  cookie: {
-    maxAge: 1000 * 60 * 60 * 24
-  } 
+    // session is stored in the DB
+    secret: "REPLACE_THIS_WITH_A_REAL_SECRET",
+    resave: false, // will not resave sessions
+    saveUninitialized: false, // only create a session when a property is added to the session
+    cookie: {
+        maxAge: 1000 * 60 * 60 * 24
+    }
 }))
 
 // middleware - passport config
@@ -44,6 +44,17 @@ app.use(passport.session())
 
 // middleware - API routes
 app.use('/api/v1/auth', routes.auth)
+
+
+//create routes: 
+
+app.get('/', (req, res) => {
+    res.json({
+
+    })
+});
+
+
 
 // connection
 app.listen(port, () => console.log(`Server is running on port ${port}`))

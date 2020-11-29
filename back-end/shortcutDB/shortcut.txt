@@ -1,0 +1,12 @@
+short cut for fry-day db: 
+
+created this file as reference to create the db easily:
+
+1: create db
+
+create database fryday
+
+2: create models:tables for our 
+
+sequelize model:create --name restaurant --attributes id:INTEGER,name:STRING,location:STRING;
+
