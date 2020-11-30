@@ -14,7 +14,6 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   restaurant.init({
-    restId: DataTypes.INTEGER,
     name: DataTypes.STRING,
     location: DataTypes.STRING
   }, {

@@ -45,10 +45,11 @@ app.use(passport.session())
 // middleware - API routes
 app.use('/api/v1/auth', routes.auth)
     //routes allows us to handle second piece of middleware
-app.use((req, res, next) => {
-    //sends to the next route handler: 
-    next();
-})
+    //without morgan use the next function 
+    // app.use((req, res, next) => {
+    //     //sends to the next route handler: 
+    //     next();
+    // })
 
 //routes: 
 
@@ -65,7 +66,7 @@ app.get('/getAllRestaurants', (req, res) => {
 
 //get one restaurant: 
 
-app.get('/api/v1/restaurants/:restaurantId', (req, res) => {
+app.get('/api/v1/restaurants/:id', (req, res) => {
     console.log(req.params)
 
 })
@@ -73,7 +74,22 @@ app.get('/api/v1/restaurants/:restaurantId', (req, res) => {
 // create a restaurant: 
 
 app.post('/api/v1/restaurants', (req, res) => {
-    console.log(req.params)
+    console.log(req.body)
+
+})
+
+// Update
+
+app.put('/api/v1/restaurants/:id', (req, res) => {
+    console.log(req.params.id)
+    console.log(req.body)
+
+})
+
+//delete: 
+
+app.delete('/api/v1/restaurants/:id', (req, res) => {
+
 
 })
 

@@ -8,5 +8,5 @@ create database fryday
 
 2: create models:tables for our 
 
-sequelize model:create --name restaurant --attributes id:INTEGER,name:STRING,location:STRING;
+sequelize model:create --name restaurant --attributes name:STRING,location:STRING;
 
