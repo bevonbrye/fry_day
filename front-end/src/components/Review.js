@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import ReviewModel from '../models/review'
-import Jumbotron from 'react-bootstrap/Jumbotron';
 
 
 const Review = props => {
@@ -26,7 +25,7 @@ const Review = props => {
   }
 
   return (
-    <div> <Jumbotron>
+    <div> 
       <h4>Leave a review</h4>
       <form onSubmit={ handleSubmit }>
         <div className="form-group">
@@ -43,7 +42,6 @@ const Review = props => {
  
         <button type="submit" style = {{borderRadius:'4px'}}>Leave Review</button>
       </form>
-      </Jumbotron>
     </div>
   )
 }

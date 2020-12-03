@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom'
 import './Header.scss'
-import {Navbar, Nav, Container, Form, FormControl, Button, Row, Col} from 'react-bootstrap'
+import {Navbar, Nav, Container, Row, Col} from 'react-bootstrap'
 
 const Header = (props) => {
   return (
@@ -41,10 +41,7 @@ const Header = (props) => {
                         <Nav.Item>
                             <Nav.Link href="/logout" onClick={ props.logout } > Logout </Nav.Link>
                         </Nav.Item>
-                        <Form inline style={{display:'flex', justifyContent:'center', color:'white',}}>
-                            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                            <Button variant="outline-success">Search</Button>
-                        </Form>
+                 
                     </>
                     :
                     <>
