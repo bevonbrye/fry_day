@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom'
 import './Header.scss'
-import {Navbar, Nav, Container, Form, FormControl, Button} from 'react-bootstrap'
+import {Navbar, Nav, Container, Form, FormControl, Button, Row, Col} from 'react-bootstrap'
 
 const Header = (props) => {
   return (
@@ -12,7 +12,8 @@ const Header = (props) => {
 <Container>
             <Navbar expand="xl">
                 <Navbar.Brand href="/">
-                Fry 
+                <Row>
+                <Col style={{color:'black'}}>Fry </Col>
                     <img
                         alt=""
                         src="/img/fries.png"
@@ -20,11 +21,12 @@ const Header = (props) => {
                         height="25"
                         className="d-inline-block align-top"
                     />{' '}
-                    Day
+                    <Col style={{color:'black'}}>Day</Col>
+                    </Row>
+
                 </Navbar.Brand>
-                
-                <Navbar.Toggle id="responsive-navbar-nav"/>
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Toggle  id="responsive-navbar-nav"/>
+                <Navbar.Collapse style={{color:'white'}} id="responsive-navbar-nav">
                     <Nav className="ml-auto">
                     { props.currentUser ?
                     <>
@@ -39,7 +41,7 @@ const Header = (props) => {
                         <Nav.Item>
                             <Nav.Link href="/logout" onClick={ props.logout } > Logout </Nav.Link>
                         </Nav.Item>
-                        <Form inline style={{display:'flex', justifyContent:'center', color:'black'}}>
+                        <Form inline style={{display:'flex', justifyContent:'center', color:'white',}}>
                             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                             <Button variant="outline-success">Search</Button>
                         </Form>
@@ -47,11 +49,11 @@ const Header = (props) => {
                     :
                     <>
                          <Nav.Item>
-                            <Nav.Link href='/login'>Sign-In</Nav.Link>
+                            <Nav.Link href='/login' style={{color:'black'}}>Sign in </Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item>
-                            <Nav.Link href='/register'>Sign-In</Nav.Link>
+                            <Nav.Link href='/register' style={{color:'black'}}>Sign up</Nav.Link>
                         </Nav.Item>
                     </>
                     }

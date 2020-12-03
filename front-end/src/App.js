@@ -19,6 +19,7 @@ function App() {
     event.preventDefault()
 
     localStorage.removeItem('id')
+    // routes 
 
     UserModel.logout()
       .then(res => {

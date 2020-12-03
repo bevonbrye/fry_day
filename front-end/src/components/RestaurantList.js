@@ -1,20 +1,22 @@
 import React from 'react'
-import "./RestaurantList.scss"
+import "./Restaurant.scss"
 import Restaurant from './Restaurant'
 
 
-const RestaurantList = (props) => { 
+class RestaurantList extends React.Component { 
+    render(){
     return (
     <div className= 'RestaurantList'>
-            <Restaurant />
-            <Restaurant />
-            <Restaurant />
-            <Restaurant />
-            <Restaurant />
-            <Restaurant />
+            {
+                this.props.restaurants.map((restaurant) => {
+                    // TODO give key to Rest component for correct order: 
+                    return <Restaurant key = {restaurant.id} restaurant={restaurant}/>
+                })
+            }
         </div>
-    )
-
+        );
+    }
 }
+
 
 export default RestaurantList;

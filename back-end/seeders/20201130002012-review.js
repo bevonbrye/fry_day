@@ -2,9 +2,10 @@
 
 module.exports = {
     up: async(queryInterface, Sequelize) => {
-        const bulkRestaurants = await queryInterface.bulkInsert('restaurants', [{
-                name: 'Taco Bell',
-                location: 'Modesto',
+        const bulkReviews = await queryInterface.bulkInsert('reviews', [{
+                userId: 1,
+                text: 'I LOVE THE FRIES HERE',
+                restaurantId: 1,
                 createdAt: new Date(),
                 updatedAt: new Date()
             },

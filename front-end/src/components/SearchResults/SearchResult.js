@@ -13,18 +13,18 @@ function SearchResult() {
         <Card style={{padding:'10px'}}>
             <Row>
            
-                <Col> <Image src="https://via.placeholder.com/150" rounded /></Col>
+                <Col> <Image src="https://imgur.com/uVdGCUp.png" rounded /></Col>
                 
                 <Card style={{ width: '18rem', border:'none'}}>
                     <ListGroup variant="flush">
-                        <ListGroup.Item>  <h3> Company name </h3></ListGroup.Item>
+                        <ListGroup.Item>  <h3> Fry guys </h3></ListGroup.Item>
                         <ListGroup.Item>Address</ListGroup.Item>
                         <ListGroup.Item style={{fontSize:'10px'}}> 
 
                         <p>Yelp Rating: 
                         <Rating style={{justifyContent:'space-between'}}
-                            emptySymbol={<img src="images/star-empty.png" className="icon" />}
-                            fullSymbol={<img src="/img/fries2.png" className="icon" />}
+                            emptySymbol={<img src="" className="icon" alt="f"/>}
+                            fullSymbol={<img src="/img/fries2.png" className="icon" alt="f" />}
                             />
                         </p>
                         <p> total reviews</p>
@@ -39,8 +39,8 @@ function SearchResult() {
                
                 
                 
-                <Col>2 of 3</Col>
-                <Col>3 of 3</Col>
+                <Col> Fry Day Review</Col>
+                <Col> Description </Col>
             
             </Row>
         </Card>

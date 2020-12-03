@@ -6,7 +6,9 @@ const session = require('express-session')
 const morgan = require('morgan')
 
 const routes = require('./routes')
-const passport = require('./passport')
+const passport = require('./passport');
+const db = require('./models');
+const { all } = require('./routes/auth');
 
 const port = process.env.PORT || 4000
 const app = express()
@@ -44,53 +46,67 @@ app.use(passport.session())
 
 // middleware - API routes
 app.use('/api/v1/auth', routes.auth)
-    //routes allows us to handle second piece of middleware
-    //without morgan use the next function 
-    // app.use((req, res, next) => {
-    //     //sends to the next route handler: 
-    //     next();
-    // })
+    // app.use('/api/v1/reviews', routes.reviews);
+
+//routes allows us to handle second piece of middleware
+//without morgan use the next function 
+app.use((req, res, next) => {
+    //sends to the next route handler: 
+    next();
+})
 
 //routes: 
 
-//gets all restaurants 
-app.get('/getAllRestaurants', (req, res) => {
-    res.json({
-        status: 'success',
-        data: {
-            restaurant: ['bevs']
-        }
-    })
-});
+// gets all reveiws 
 
 
-//get one restaurant: 
+// app.get('/api/v1/reviews', async(req, res) => {
+//     db.review.findAll({ include: [db.user] }).then((allReviews) => {
+//         res.json(allReviews)
+//     })
+// });
 
-app.get('/api/v1/restaurants/:id', (req, res) => {
-    console.log(req.params)
+//send jsaon response to friont end
 
+
+//get one reviews: 
+
+app.get('/api/v1/reviews/:id', (req, res) => {
+    // db.review.create(req.params)
 })
 
-// create a restaurant: 
+// // create a reviews: 
 
-app.post('/api/v1/restaurants', (req, res) => {
-    console.log(req.body)
+// app.post('/api/v1/reviews', async(req, res) => {
+//     await db.review.create({
+//         ...req.body,
+//         userId: req.user.id
+//     })
 
-})
-
-// Update
-
-app.put('/api/v1/restaurants/:id', (req, res) => {
-    console.log(req.params.id)
-    console.log(req.body)
-
-})
-
-//delete: 
-
-app.delete('/api/v1/restaurants/:id', (req, res) => {
+//     //take everything in a and pulls it out 
+//     res.sendStatus(200) //initiate send 
+// })
 
 
+// // Update
+
+// app.put('/api/v1/reviews/:id', (req, res) => {
+//     console.log(req.params.id)
+//     console.log(req.body)
+
+// })
+
+// //delete: 
+
+app.delete('/api/v1/reviews/:id', (req, res) => {
+    const id = req.body.id
+    db.reviews
+        .destroy({
+            where: { id: id },
+        })
+        .then((deletedReview) => {
+            res.redirect('back')
+        })
 })
 
 
