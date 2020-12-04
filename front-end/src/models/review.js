@@ -4,6 +4,7 @@ const URL = "http://localhost:4000/api/v1"
 
 export default class ReviewModel {
 
+    //---------------------------------------------------------------
     // static show = (resstaurantId) => {
     //     return fetch(`${ URL }/${ restaurantId }`).then(res => res.json())
     // }
@@ -18,7 +19,7 @@ export default class ReviewModel {
     //     return fetchedReviews
     //     }catch(e) {}
     // }
-
+    // ----------------------------------------------------------------
     static getAll = () => {
         return fetch(`${ URL }/reviews`).then(res => res.json())
     }

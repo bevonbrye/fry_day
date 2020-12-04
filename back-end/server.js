@@ -55,62 +55,6 @@ app.use((req, res, next) => {
     next();
 })
 
-// //routes: 
-
-// gets all reveiws 
-
-
-// app.get('/api/v1/reviews', async(req, res) => {
-//     db.review.findAll({ include: [db.user] }).then((allReviews) => {
-//         res.json(allReviews)
-//     })
-// });
-
-//send jsaon response to friont end
-
-
-//get one reviews: 
-
-// app.get('/api/v1/reviews/:id', (req, res) => {
-//     // db.review.create(req.params)
-// })
-
-// // create a reviews: 
-
-// app.post('/api/v1/reviews', async(req, res) => {
-//     await db.review.create({
-//         ...req.body,
-//         userId: req.user.id
-//     })
-
-//     //take everything in a and pulls it out 
-//     res.sendStatus(200) //initiate send 
-// })
-
-
-// // Update
-
-// app.put('/api/v1/reviews/:id', (req, res) => {
-//     console.log(req.params.id)
-//     console.log(req.body)
-
-// })
-
-// //delete: 
-
-// app.delete('/api/v1/reviews/:id', (req, res) => {
-//     const id = req.body.id
-//     db.reviews
-//         .destroy({
-//             where: { id: id },
-//         })
-//         .then((deletedReview) => {
-//             res.redirect('back')
-//         })
-// })
-
-
-
 
 // connection
 app.listen(port, () => console.log(`Server is running on port ${port}`))

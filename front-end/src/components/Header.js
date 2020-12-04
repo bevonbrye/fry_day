@@ -8,12 +8,11 @@ const Header = (props) => {
     <header>
 
 
-
 <Container>
             <Navbar expand="xl">
                 <Navbar.Brand href="/">
                 <Row>
-                <Col style={{color:'black'}}>Fry </Col>
+                <Col style={{color:'black'}}>Fry Day </Col>
                     <img
                         alt=""
                         src="/img/fries.png"
@@ -21,7 +20,6 @@ const Header = (props) => {
                         height="25"
                         className="d-inline-block align-top"
                     />{' '}
-                    <Col style={{color:'black'}}>Day</Col>
                     </Row>
 
                 </Navbar.Brand>
@@ -30,10 +28,6 @@ const Header = (props) => {
                     <Nav className="ml-auto">
                     { props.currentUser ?
                     <>
-
-                    
-
-                    
                         <Nav.Item>
                             <Nav.Link href='/profile'> Profile</Nav.Link>
                         </Nav.Item>
@@ -59,30 +53,6 @@ const Header = (props) => {
             </Navbar>
         </Container>
 
-
-
-
-{/* Old login */}
-      {/* <div className="logo">
-        <Link to={'/'}> logo goes here </Link>
-      </div>
-      <div className="links">
-        <ul>
-          { props.currentUser ? 
-            <>
-              <li><Link to={'/profile'}>Profile</Link></li>
-              <li><a href="/logout" onClick={ props.logout }>Log Out</a></li>
-            </>
-          :
-            <>
-              <li><Link to={'/login'}>Login</Link></li>
-              <li><Link to={'/About'}>About</Link></li>
-              <button><Link to={'/register'}>Sign-up</Link></button>
-
-            </>
-          }
-        </ul>
-      </div> */}
     </header>
   );
 }

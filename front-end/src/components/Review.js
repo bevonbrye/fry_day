@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import ReviewModel from '../models/review'
 
 
-
 const Review = props => {
   const [review, setReview] = useState('');
   const [reviews, setReviews] = useState([]);
@@ -41,7 +40,6 @@ const Review = props => {
           setReviews(reviews.filter(item => item.id !== id))
         })
   }
-
   return (
     <div> 
 
@@ -54,9 +52,7 @@ const Review = props => {
                       <>
 
                       <li>
-                    
                      {review.text}
-                     
                      </li>
                           <button onClick={ ()=> handleClick(review.id)} style = {{borderRadius:'4px'}}> Delete </button>
 
@@ -66,8 +62,6 @@ const Review = props => {
             }     
             </ul>
         </div>  
-      
-
       <h4>Leave a review</h4>
       <form onSubmit={ handleSubmit }>
         <div className="form-group">
@@ -77,13 +71,9 @@ const Review = props => {
             type="text"
             required
           />
-          {/* <h3> {props.text} </h3> */}
         </div>
- 
         <button type="submit" style = {{borderRadius:'4px'}}>Leave Review</button>
-
       </form>
-
     </div>
   )
 }

@@ -2,8 +2,6 @@
 const router = require('express').Router();
 const ctrl = require('../controllers');
 
-// routes
-// router.get('/', ctrl.reviews.index);
 router.get('/', ctrl.reviews.index);
 router.post('/', ctrl.reviews.create);
 router.get('/:restaurantId', ctrl.reviews.show);
