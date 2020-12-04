@@ -12,6 +12,7 @@ class RestaurantList extends React.Component {
                     // TODO give key to Rest component for correct order: 
                     return <Restaurant key = {restaurant.id} restaurant={restaurant}/>
                 })
+                
             }
         </div>
         );

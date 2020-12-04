@@ -23,6 +23,11 @@ export default class ReviewModel {
         return fetch(`${ URL }/reviews`).then(res => res.json())
     }
 
+    static show = (restaurantId) => {
+        return fetch(`${ URL }/reviews/${restaurantId}`).then(res => res.json())
+    }
+
+
     static create(reviewData) {
         return fetch(`${URL}/reviews`, {
             method: "POST",
@@ -34,8 +39,8 @@ export default class ReviewModel {
         }).then(res => res.json())
     }
 
-    static delete = (restaurantId) => {
-        return fetch(`${ URL }/reviews/${ restaurantId }`, {
+    static delete = (reviewId) => {
+        return fetch(`${ URL }/reviews/${ reviewId }`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"

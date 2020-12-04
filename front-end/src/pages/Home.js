@@ -25,7 +25,7 @@ class Home extends React.Component {
 
     searchYelp(term, location, sortBy) {
         Yelp.search(term, location, sortBy).then(restaurants => {
-            this.setState({ restaurants: restaurants });
+            this.setState({ restaurants: restaurants || [] });
         });
     }
 
@@ -34,7 +34,6 @@ class Home extends React.Component {
     return (
       <div>
         <h1 style={{marginTop:'5rem'}}>Everyday is FryDay  </h1>
-        {/* <ReviewShow/> */}
       <Search searchYelp={this.searchYelp}/>
       <RestaurantList restaurants={this.state.restaurants}/>
       </div>

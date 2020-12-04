@@ -2,7 +2,7 @@
 // import ReviewModel from '../models/review';
 
 
-// const ReviewShow = () => {
+// const ReviewShow = (props) => {
 //     const [reviews, setReviews] = useState([])
 
 // //takes two params: callback depend list 
@@ -12,16 +12,23 @@
 //   }, [] ) 
     
   
-
 //   const fetchData = async () => {
-//         const allReviews = await ReviewModel.this.props.restaurants.map((restaurant)
+//         const allReviews = await ReviewModel.show(props.restaurantId)
+//         setReviews(allReviews)
 //     }
   
 //     return (
-//       <div>
+//       <div>          
 //          <div className="image-wrap">
-//                 </div>
-//                 <h3>{ this.props.id }</h3>
+//             </div>
+//             <ul>        
+//                 {
+//                 reviews.map((review) => {
+//                     // TODO give key to Rest component for correct order: 
+//                     return <li> {review.text}</li>
+//                 })
+//             }     
+//             </ul>
 //         </div>
 //     );
   

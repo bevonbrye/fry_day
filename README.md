@@ -3,9 +3,10 @@
 
 
 
-#####  The yelp for french fries
+####  The yelp for french fries
 
 ## Wireframe
+![](image/04.png)
 ![](image/03.png)
 ![](image/02.png)
 ![](image/01.png)
@@ -49,7 +50,12 @@ class Business extends React.Component {
 
 ![](image/erdFry.png)
 
+#
 
 ## Tech Used: 
-| PostgresSQL/Sequelize | Express.js | React | Node.js | React-Bootrap/Bootstrap | SCSS 
+| PostgresSQL/Sequelize | Express.js | React | Node.js | React-Bootrap/Bootstrap | SCSS
+
+## Credit: 
+Stack Overflow | CodeAcademy | JasonSu | GA Staff | Figman| Trello |Yelp API
+- https://trello.com/b/uquOdPyA/project-3-pern-stack
 
