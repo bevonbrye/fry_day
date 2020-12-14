@@ -88,10 +88,11 @@ class Search extends React.Component {
                     <input placeholder="Search By Location" onChange={this.handleLocationChange} />
                 </div>
                 </Col>
-                </Row>
+                
                 <div className="SearchBar-submit">
                 <div onClick={this.handleSearch}>Search</div>
                 </div>
+                </Row>
             </div>          
 
         )

@@ -3,8 +3,9 @@
 const API_KEY = 'tNIyimuWUDLYKyxdk1P5Rh8q1-ksNLU88MnKz0EVQHBWGbg5s-AKyAX993YU0hFzsLZsM0MpTVfMKDzB-SXtddiifpxb2FRIzjNt7TNJJ6ejQXVjCuAeaciOQ3q1X3Yx'; // Insert API key here.
 
 const Yelp = {
+
   search(term, location, sortBy) {
-    return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}&limit=2`, {
+    return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}&limit=3`, {
       headers: {
         Authorization: `Bearer ${API_KEY}`
       }
@@ -20,7 +21,7 @@ const Yelp = {
           city: business.location.city,
           state: business.location.state,
           zipCode: business.location.zip_code,
-          category: business.categories[0].title,
+          // category: business.categories[0].title,
           rating: business.rating,
           reviewCount: business.review_count
         }));

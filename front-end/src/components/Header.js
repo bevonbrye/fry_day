@@ -35,6 +35,12 @@ const Header = (props) => {
                         <Nav.Item>
                             <Nav.Link href="/logout" onClick={ props.logout } > Logout </Nav.Link>
                         </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href='/About' style={{color:'black'}}>About</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href='/Blog' style={{color:'black'}}>Blog</Nav.Link>
+                        </Nav.Item>
                  
                     </>
                     :
@@ -46,6 +52,14 @@ const Header = (props) => {
                         <Nav.Item>
                             <Nav.Link href='/register' style={{color:'black'}}>Sign up</Nav.Link>
                         </Nav.Item>
+
+                        <Nav.Item>
+                            <Nav.Link href='/About' style={{color:'black'}}>About</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href='/Blog' style={{color:'black'}}>Blog</Nav.Link>
+                        </Nav.Item>
+                        
                     </>
                     }
                     </Nav>

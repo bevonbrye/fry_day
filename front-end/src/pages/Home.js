@@ -35,6 +35,7 @@ class Home extends React.Component {
       <div>
         <h1 style={{marginTop:'5rem'}}>Everyday is FryDay  </h1>
         <h6>Thank God It's FryDay</h6>
+      {/* <Carousel/> */}
       <Search searchYelp={this.searchYelp}/>
       <RestaurantList restaurants={this.state.restaurants}/>
       </div>
