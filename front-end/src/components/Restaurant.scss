@@ -8,10 +8,11 @@
 }
 
 // use later: 
-// .Restaurant .image-container {
-//     height: 100px;
-//     width: 100px;
-// }
+.Restaurant .image-container {
+    height: 100px;
+    width: 100px;
+}
+
 .Restaurant h2 {
     margin-bottom: .5rem;
     font-size: 1.2rem;
@@ -33,11 +34,12 @@
     justify-content: space-between;
 }
 
-// .Restaurant-reviews {
-//     flex-direction: column;
-//     justify-content: space-between;
-//     text-align: right;
-// }
+.Restaurant-reviews {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
 .Restaurant-reviews h3 {
     color: #CCA353;
     font-weight: 600;

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Search.scss'
-import {Row, Col} from 'react-bootstrap'
+// import {Row, Col} from 'react-bootstrap'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faSearch } from '@fortawesome/free-solid-svg-icons'
 // import { useHistory } from "react-router-dom";
@@ -73,26 +73,26 @@ class Search extends React.Component {
     render() { 
         return (
             <div className="SearchBar">
-            <Row>
-            <Col>
+            {/* <Row>
+            <Col> */}
                 <div className="SearchBar-sort-options">
                 
                     <ul>
                         {this.renderSortByRestaurants()}
                     </ul>
                 </div>
-                </Col>
-                <Col>
+                {/* </Col>
+                <Col> */}
                 <div className="SearchBar-fields">
                     {/* <input placeholder="Search Businesses" /> */}
                     <input placeholder="Search By Location" onChange={this.handleLocationChange} />
                 </div>
-                </Col>
+                {/* </Col> */}
                 
                 <div className="SearchBar-submit">
-                <div onClick={this.handleSearch}>Search</div>
+                <div href='/About' onClick={this.handleSearch}>Search</div>
                 </div>
-                </Row>
+                {/* </Row> */}
             </div>          
 
         )
