@@ -4,6 +4,7 @@ import Search from '../components/Search'
 import Yelp from '../models/yapiref/yapi2'
 import Hero from '../components/Hero'
 import './Home.scss'
+import BlogCards from '../components/Blogs/BlogCards'
 // import ReviewShow from '../components/ReviewShow'
 // import Carousel from '../components/Carousel'
 
@@ -39,6 +40,7 @@ class Home extends React.Component {
             <h6 > Thank God It 's FryDay</h6> */}
             <Search searchYelp = { this.searchYelp }/> 
             <RestaurantList restaurants = {this.state.restaurants }/> 
+            <BlogCards/>
             </div>
         );
     }
