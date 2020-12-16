@@ -6,45 +6,19 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Header = (props) => {
   return (
-    <header>
 
-
-{/* 
-     <div className="logo">
-        <Link to={'/'}> logo goes here </Link>
-      </div>
-      <div className="links">
-        <ul>
-          { props.currentUser ? 
-            <>
-              <li><Link to={'/profile'}>Profile</Link></li>
-              <li><a href="/logout" onClick={ props.logout }>Log Out</a></li>
-            </>
-          :
-            <>
-              <li><Link to={'/login'}>Login</Link></li>
-              <li><Link to={'/About'}>About</Link></li>
-              <button><Link to={'/register'}>Sign-up</Link></button>
-            </>
-          }
-        </ul>
-      </div>  */}
-
-
-
-
-{/* <Container> */}
-            <Navbar expand='xl' style={{backgroundColor:}}>
-                <Navbar.Brand href="/">
+<header>
+            <Navbar expand='xl'>
+               <Navbar.Brand href="/">
                     <img
                         alt=""
-                        src="/img/logos.png"
-                        width="110"
-                        height="100"
-                        className="d-inline-block align-top"
+                        src="/img/milogo2.png"
+                        width="87"
+                        height="77"
+                        className="logo"
                     />
                     {/*''*/}
-                </Navbar.Brand>
+                </Navbar.Brand> 
                 <Navbar.Toggle  id="responsive-navbar-nav"/>
                 <Navbar.Collapse style={{color:'white'}} id="responsive-navbar-nav">
                     <Nav className="ml-auto">
@@ -88,9 +62,37 @@ const Header = (props) => {
                 </Navbar.Collapse>
             </Navbar>
         {/* </Container> */}
-
-    </header>
+</header>
   );
 }
 
 export default Header;
+
+
+
+
+{/* 
+     <div className="logo">
+        <Link to={'/'}> logo goes here </Link>
+      </div>
+      <div className="links">
+        <ul>
+          { props.currentUser ? 
+            <>
+              <li><Link to={'/profile'}>Profile</Link></li>
+              <li><a href="/logout" onClick={ props.logout }>Log Out</a></li>
+            </>
+          :
+            <>
+              <li><Link to={'/login'}>Login</Link></li>
+              <li><Link to={'/About'}>About</Link></li>
+              <button><Link to={'/register'}>Sign-up</Link></button>
+            </>
+          }
+        </ul>
+      </div>  */}
+
+
+
+
+{/* <Container> */}

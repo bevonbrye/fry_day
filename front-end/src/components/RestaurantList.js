@@ -1,7 +1,7 @@
 import React from 'react'
 import "./RestaurantList.scss"
 import Restaurant from './Restaurant'
-import { Row } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 
 class RestaurantList extends React.Component { 
@@ -10,6 +10,8 @@ class RestaurantList extends React.Component {
 
     <div className= 'RestaurantList'>
             <Row >
+                <Col>
+            
             {
                 this.props.restaurants.map((restaurant) => {
                     // TODO give key to Rest component for correct order: 
@@ -17,7 +19,7 @@ class RestaurantList extends React.Component {
                 })
                 
             }
-            
+            </Col>
             </Row>
         </div>
         );
