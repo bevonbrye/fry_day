@@ -1,7 +1,7 @@
 import React from 'react'
 import "./RestaurantList.scss"
 import Restaurant from './Restaurant'
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 
 
 class RestaurantList extends React.Component { 
@@ -10,7 +10,6 @@ class RestaurantList extends React.Component {
 
     <div className= 'RestaurantList'>
             <Row >
-                <Col>
             
             {
                 this.props.restaurants.map((restaurant) => {
@@ -19,7 +18,7 @@ class RestaurantList extends React.Component {
                 })
                 
             }
-            </Col>
+            
             </Row>
         </div>
         );

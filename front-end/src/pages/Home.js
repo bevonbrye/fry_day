@@ -2,6 +2,7 @@ import React from 'react';
 import RestaurantList from '../components/RestaurantList';
 import Search from '../components/Search'
 import Yelp from '../models/yapiref/yapi2'
+import Hero from '../components/Hero'
 import './Home.scss'
 // import ReviewShow from '../components/ReviewShow'
 // import Carousel from '../components/Carousel'

@@ -73,10 +73,13 @@ class Search extends React.Component {
     render() { 
         return (
             <div className="SearchBar">
+
+  <video src="/img/fdvid.mp4" autoPlay loop muted />
+               <h1> EVERYDAY IS FRYDAY! </h1>
+               <p>The best website for french fry lovers.</p>
             {/* <Row>
             <Col> */}
                 <div className="SearchBar-sort-options">
-                
                     <ul>
                         {this.renderSortByRestaurants()}
                     </ul>
@@ -90,9 +93,14 @@ class Search extends React.Component {
                 {/* </Col> */}
                 
                 <div className="SearchBar-submit">
+
                 <div href='/About' onClick={this.handleSearch}>Search</div>
                 </div>
                 {/* </Row> */}
+                {/* <video autoplay muted  id="bgvid">
+                    <source src="/img/fdvid.mp4" type="video/mp4"/> 
+                 </video> */}
+                
             </div>          
 
         )

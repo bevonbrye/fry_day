@@ -8,7 +8,7 @@ const Header = (props) => {
   return (
 
 <header>
-            <Navbar expand='xl'>
+            <Navbar expand='xl' w>
                <Navbar.Brand href="/">
                     <img
                         alt=""
@@ -32,28 +32,28 @@ const Header = (props) => {
                             <Nav.Link href="/logout" onClick={ props.logout } > Logout </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href='/About' style={{color:'black'}}>About</Nav.Link>
+                            <Nav.Link href='/About' style={{color:'white'}}>About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href='/Blog' style={{color:'black'}}>Blog</Nav.Link>
+                            <Nav.Link href='/Blog' style={{color:'white'}}>Blog</Nav.Link>
                         </Nav.Item>
                  
                     </>
                     :
                     <>
                          <Nav.Item>
-                            <Nav.Link href='/login' style={{color:'black'}}>Sign in </Nav.Link>
+                            <Nav.Link href='/login' style={{color:'white'}}>Sign in </Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item>
-                            <Nav.Link href='/register' style={{color:'black'}}>Sign up</Nav.Link>
+                            <Nav.Link href='/register' style={{color:'white'}}>Sign up</Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item>
-                            <Nav.Link href='/About' style={{color:'black'}}>About</Nav.Link>
+                            <Nav.Link href='/About' style={{color:'white'}}>About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href='/Blog' style={{color:'black'}}>Blog</Nav.Link>
+                            <Nav.Link href='/Blog' style={{color:'white'}}>Blog</Nav.Link>
                         </Nav.Item>
                         
                     </>
@@ -95,4 +95,3 @@ export default Header;
 
 
 
-{/* <Container> */}
