@@ -1,6 +1,6 @@
 import React from 'react'
 import './Search.scss'
-// import {Row, Col} from 'react-bootstrap'
+import {Row, Col} from 'react-bootstrap'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faSearch } from '@fortawesome/free-solid-svg-icons'
 // import { useHistory } from "react-router-dom";
@@ -75,28 +75,28 @@ class Search extends React.Component {
             <div className="SearchBar">
 
   <video src="/img/fdvid.mp4" autoPlay loop muted />
-               <h1> EVERYDAY IS FRYDAY! </h1>
-               <p>The best website for french fry lovers.</p>
-            {/* <Row>
-            <Col> */}
+               <h2 style={{color:'white'}}> EVERYDAY IS FRYDAY! </h2>
+               <p style={{color:'white'}}>The best website for french fry lovers.</p>
+            {/* <Row> */}
+            <Col>
                 <div className="SearchBar-sort-options">
                     <ul>
                         {this.renderSortByRestaurants()}
                     </ul>
                 </div>
-                {/* </Col>
-                <Col> */}
+                </Col>
+                <Col>
                 <div className="SearchBar-fields">
-                    {/* <input placeholder="Search Businesses" /> */}
+                    <input placeholder="Search By Restaurant" />
                     <input placeholder="Search By Location" onChange={this.handleLocationChange} />
                 </div>
-                {/* </Col> */}
+                </Col>
                 
                 <div className="SearchBar-submit">
 
-                <div href='/About' onClick={this.handleSearch}>Search</div>
+                <a onClick={this.handleSearch}>Search</a>
                 </div>
-                {/* </Row> */}
+                {/* </Row>  */}
                 {/* <video autoplay muted  id="bgvid">
                     <source src="/img/fdvid.mp4" type="video/mp4"/> 
                  </video> */}
