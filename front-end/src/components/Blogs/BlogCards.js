@@ -6,7 +6,7 @@ import './BlogCards.scss'
 function Cards() {
   return (
     <div className='cards'>
-      <h2 style={{color:'lightGrey', marginTop:'-3rem'}}> Featured!</h2>
+      <h2 style={{color:'lightGrey', marginTop:'-3rem'}}> Featured</h2>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>

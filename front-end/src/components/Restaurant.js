@@ -30,6 +30,10 @@ class Business extends React.Component {
               <p>{`${this.props.restaurant.reviewCount} reviews`}</p>
             </div>
           </div>
+          <div className="Restaurant-number">
+            <h5><a href='' >{this.props.restaurant.phone} </a></h5>
+          </div>
+
         <Review restaurantId ={this.props.restaurant.id}/>
         </div>
       );

@@ -72,7 +72,7 @@ const Review = props => {
             required
           />
         </div>
-        <button type="submit" style = {{borderRadius:'4px', marginBottom:'1rem'}}>Leave Review</button>
+        <button type="submit" style = {{borderRadius:'3px', marginBottom:'1rem', border:'none'}}>Add</button>
       </form>
     </div>
   )
