@@ -1,6 +1,29 @@
-# Fry Day 
+# Capstone Branch Slides
+
+
+[Capstone Slides](#https://docs.google.com/presentation/d/1Y3XJUJ77yuzNl9LXIb_0c45hzi9hgQaIjSgF-2W3O_c/edit?)
+
+[UX-Engineering Starter Pack](#https://github.com/bevonbrye/UX-Engineering)
+
+# Fry Day (V2) 
+
 ### everything a french fry lover needs! I have always been a huge fan of french fries, almost to an unhealthy extent. So I decided to create an app that enebles a user to search for the best fry restaurants near them and leave a review! 
 
+## Wireflow
+
+![](image/wireflow1.png)
+
+## Preview 
+
+![](image/HPSH.png)
+![](image/HPSH1.png)
+![](image/HPSH2.png)
+
+
+
+
+
+# Fry Day (V1) 
 
 
 ####  The yelp for french fries
@@ -53,7 +76,7 @@ class Business extends React.Component {
 #
 
 ## Tech Used: 
-| PostgresSQL/Sequelize | Express.js | React | Node.js | React-Bootrap/Bootstrap | SCSS
+| PostgresSQL/Sequelize | Express.js | React | Node.js | React-Bootrap/Bootstrap | SCSS | InVision | Sketch | Craft Maker 
 
 ## Credit: 
 Stack Overflow | CodeAcademy | JasonSu | GA Staff | Figman| Trello |Yelp API
