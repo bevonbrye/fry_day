@@ -1,9 +1,9 @@
 # Capstone Branch Slides
 
 
-[Capstone Slides](#https://docs.google.com/presentation/d/1Y3XJUJ77yuzNl9LXIb_0c45hzi9hgQaIjSgF-2W3O_c/edit?)
+[Capstone Slides](https://docs.google.com/presentation/d/1Y3XJUJ77yuzNl9LXIb_0c45hzi9hgQaIjSgF-2W3O_c/edit?)
 
-[UX-Engineering Starter Pack](#https://github.com/bevonbrye/UX-Engineering)
+[UX-Engineering Starter Pack](https://github.com/bevonbrye/UX-Engineering)
 
 # Fry Day (V2) 
 
