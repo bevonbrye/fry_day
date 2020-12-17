@@ -75,7 +75,8 @@ class Search extends React.Component {
             <div className="SearchBar">
 
   <video src="/img/fdvid.mp4" autoPlay loop muted />
-               <h2 style={{color:'black'}}> EVERYDAY IS FRYDAY! </h2>
+
+               <h2 style={{color:'black'}}>  EVERYDAY IS FRYDAY! </h2>
                <p style={{color:'black'}}>The best website for french fry lovers.</p>
             {/* <Row> */}
             <Col>

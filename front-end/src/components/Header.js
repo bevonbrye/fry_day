@@ -8,7 +8,7 @@ const Header = (props) => {
   return (
 
 <header>
-            <Navbar expand='xl' w>
+            <Navbar expand='xl'>
                <Navbar.Brand href="/">
                     <img
                         alt=""
