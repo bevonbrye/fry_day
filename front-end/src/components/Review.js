@@ -62,7 +62,7 @@ const Review = props => {
             }     
             </ul>
         </div>  
-      <h4>Leave a review</h4>
+      <h6>Leave a Fry Note</h6>
       <form onSubmit={ handleSubmit }>
         <div className="form-group">
           <input 
@@ -72,7 +72,7 @@ const Review = props => {
             required
           />
         </div>
-        <button type="submit" style = {{borderRadius:'4px'}}>Leave Review</button>
+        <button type="submit" style = {{borderRadius:'4px', marginBottom:'1rem'}}>Leave Review</button>
       </form>
     </div>
   )

@@ -36,8 +36,6 @@ class Home extends React.Component {
 
         return ( 
           <div >
-            {/* <h1 style = {{ marginTop: '5rem' }}> Everyday is FryDay </h1> 
-            <h6 > Thank God It 's FryDay</h6> */}
             <Search searchYelp = { this.searchYelp }/> 
             <RestaurantList restaurants = {this.state.restaurants }/> 
             <BlogCards/>
