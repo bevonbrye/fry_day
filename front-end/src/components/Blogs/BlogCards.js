@@ -14,13 +14,13 @@ function Cards() {
               src='/img/fries2.jpeg'
               text='Many of you already know, but I’d thought I’d give a shout out here, after all, I’m not shy. I was recently the Featured Blogger at Philly Grub. You can read the interview here.'
               label='Featured Blogger at PhillyGrub - Philly Grub'
-              path='/'
+              path exact ='/https://phillygrub.blog/2015/03/16/philly-food-bloggers/'
             />
             <BlogItems
               src='/img/fryBlog.jpeg'
               text="You could just do two types, like half shoe-string fries and half sweet potato fries, but that's nothing special because you could get it anywhere, Gim said. I think three to five types of fries just makes it more interesting to look at."
               label='The french fry boar is the new cheese plate. Here is how to make your own Instagram-worthy version at home.'
-              path='/'
+              path='/Blog'
             />
           </ul>
           <ul className='cards__items'>

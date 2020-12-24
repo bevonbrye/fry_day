@@ -1,6 +1,6 @@
 import React from 'react'
 import './Search.scss'
-import {Row, Col} from 'react-bootstrap'
+import {Col} from 'react-bootstrap'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faSearch } from '@fortawesome/free-solid-svg-icons'
 // import { useHistory } from "react-router-dom";
@@ -78,7 +78,6 @@ class Search extends React.Component {
 
                <h2 style={{color:'black'}}>  EVERYDAY IS FRYDAY! </h2>
                <p style={{color:'black'}}>The best website for french fry lovers.</p>
-            {/* <Row> */}
             <Col>
                 <div className="SearchBar-sort-options">
                     <ul>
@@ -95,12 +94,9 @@ class Search extends React.Component {
                 
                 <div className="SearchBar-submit">
 
-                <a onClick={this.handleSearch}>Search</a>
+                <a href onClick={this.handleSearch}>Search</a>
                 </div>
-                {/* </Row>  */}
-                {/* <video autoplay muted  id="bgvid">
-                    <source src="/img/fdvid.mp4" type="video/mp4"/> 
-                 </video> */}
+             
                 
             </div>          
 
