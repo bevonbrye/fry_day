@@ -1,19 +1,118 @@
-.SearchBar {
+// .SearchBar {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 20%;
+// }
+// input {
+//     height: 30px;
+//     width: 500px;
+// }
+// .button {
+//     background-color: lightgray;
+//     border-radius: 3%;
+//     border: none;
+//     width: 100px;
+// }
+// .SearchBar-sort-options ul {
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 2.22rem;
+//     color: black;
+// }
+// .SearchBar-sort-options li {
+//     cursor: pointer;
+//     width: 4.33rem;
+//     border-bottom: 1px solid white;
+//     padding: 0 2.58rem .33rem 2.58rem;
+//     line-height: 1.13;
+//     text-align: center;
+//     font-weight: 600;
+//     font-size: .83rem;
+//     transition: color .25s;
+// }
+// .SearchBar-sort-options li:hover {
+//     color: grey;
+// }
+// .SearchBar-sort-options li.active,
+// .SearchBar-sort-options li.active:hover {
+//     border-bottom: 1px solid #f0c36c;
+//     color: #f0c36c;
+// }
+// .SearchBar-fields {
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 2.88rem;
+// }
+// .SearchBar-fields input {
+//     height: 3rem;
+//     width: 21rem;
+//     padding: .66rem 1rem;
+//     margin-right: 2.22rem;
+//     border: 1px solid black;
+//     border-radius: 4px;
+//     font-size: 1.5rem;
+//     font-weight: 500;
+// }
+// .SearchBar-fields input:last-child {
+//     margin-right: 0;
+// }
+// .SearchBar-submit {
+//     text-align: center;
+// }
+// .SearchBar-submit div {
+//     border-radius: 4px;
+//     padding: .72rem 1.7rem;
+//     background-color: #cca353;
+//     color: black;
+//     font-weight: 600;
+//     transition: background-color .5s;
+// }
+// .SearchBar-submit div:hover {
+//     cursor: pointer;
+//     background-color: #a7874b;
+// }
+// @media only screen and (max-width: 560px) {
+//     .SearchBar {
+//         background-image: url('/img/pexels-photo-2235832.jpeg');
+//     }
+//     .SearchBar-sort-options ul {
+//         margin-left: 2rem;
+//         margin-right: 2rem;
+//     }
+//     .SearchBar-fields {
+//         flex-direction: column;
+//         align-items: center;
+//     }
+//     .SearchBar-fields input {
+//         margin-right: 0;
+//         margin-bottom: .86rem;
+//     }
+// }
+h2 {
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
-    margin-top: 20%;
+    align-items: center;
 }
 
-input {
-    height: 30px;
-    width: 500px;
+.SearchBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // background-image: url('/img/pexels-photo-2235832.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
 }
 
-.button {
-    background-color: lightgray;
-    border-radius: 3%;
-    border: none;
-    width: 100px;
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -3;
+    border-radius: 0% 0% 2px 2px;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
 }
 
 .SearchBar-sort-options ul {
@@ -21,13 +120,13 @@ input {
     justify-content: center;
     margin-bottom: 2.22rem;
     color: black;
+    margin-top: 3rem;
 }
 
 .SearchBar-sort-options li {
     cursor: pointer;
     width: 4.33rem;
-    border-bottom: 1px solid white;
-    padding: 0 2.58rem .33rem 2.58rem;
+    // padding: 0 2.58rem .33rem 2.58rem;
     line-height: 1.13;
     text-align: center;
     font-weight: 600;
@@ -36,7 +135,7 @@ input {
 }
 
 .SearchBar-sort-options li:hover {
-    color: grey;
+    color: white;
 }
 
 .SearchBar-sort-options li.active,
@@ -52,13 +151,12 @@ input {
 }
 
 .SearchBar-fields input {
-    height: 3rem;
     width: 21rem;
     padding: .66rem 1rem;
     margin-right: 2.22rem;
-    border: 1px solid black;
+    border: 1px solid #fff;
     border-radius: 4px;
-    font-size: 1.5rem;
+    font-size: .77rem;
     font-weight: 500;
 }
 
@@ -70,23 +168,24 @@ input {
     text-align: center;
 }
 
-.SearchBar-submit div {
+.SearchBar-submit a {
     border-radius: 4px;
     padding: .72rem 1.7rem;
-    background-color: #cca353;
-    color: black;
+    background-color: #fbcf78;
+    color: #ffffff;
     font-weight: 600;
     transition: background-color .5s;
+    opacity: .7;
 }
 
-.SearchBar-submit div:hover {
+.SearchBar-submit a:hover {
     cursor: pointer;
     background-color: #a7874b;
 }
 
 @media only screen and (max-width: 560px) {
     .SearchBar {
-        background-image: url('/front-end/public/img/pexels-photo-2235832.jpeg');
+        // background-image: url('/img/pexels-photo-2235832.jpeg');
     }
     .SearchBar-sort-options ul {
         margin-left: 2rem;

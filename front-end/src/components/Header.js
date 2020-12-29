@@ -1,39 +1,28 @@
 import React from 'react';
-// import { Link } from 'react-router-dom'
 import './Header.scss'
-import {Navbar, Nav, Container, Form, FormControl, Button, Row, Col} from 'react-bootstrap'
+import {Navbar, Nav} from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Header = (props) => {
   return (
-    <header>
 
-
-
-<Container>
-            <Navbar expand="xl">
-                <Navbar.Brand href="/">
-                <Row>
-                <Col style={{color:'black'}}>Fry </Col>
+<header>
+            <Navbar expand='xl'>
+               <Navbar.Brand href="/">
                     <img
                         alt=""
-                        src="/img/fries.png"
-                        width="25"
-                        height="25"
-                        className="d-inline-block align-top"
-                    />{' '}
-                    <Col style={{color:'black'}}>Day</Col>
-                    </Row>
-
-                </Navbar.Brand>
+                        src="/img/milogo2.png"
+                        width="87"
+                        height="77"
+                        className="logo"
+                    />
+                    {/*''*/}
+                </Navbar.Brand> 
                 <Navbar.Toggle  id="responsive-navbar-nav"/>
                 <Navbar.Collapse style={{color:'white'}} id="responsive-navbar-nav">
                     <Nav className="ml-auto">
                     { props.currentUser ?
                     <>
-
-                    
-
-                    
                         <Nav.Item>
                             <Nav.Link href='/profile'> Profile</Nav.Link>
                         </Nav.Item>
@@ -41,10 +30,13 @@ const Header = (props) => {
                         <Nav.Item>
                             <Nav.Link href="/logout" onClick={ props.logout } > Logout </Nav.Link>
                         </Nav.Item>
-                        <Form inline style={{display:'flex', justifyContent:'center', color:'white',}}>
-                            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                            <Button variant="outline-success">Search</Button>
-                        </Form>
+                        <Nav.Item>
+                            <Nav.Link href='/About' style={{color:'white'}}>About</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href='/Blog' style={{color:'white'}}>Blog</Nav.Link>
+                        </Nav.Item>
+                 
                     </>
                     :
                     <>
@@ -55,18 +47,31 @@ const Header = (props) => {
                         <Nav.Item>
                             <Nav.Link href='/register' style={{color:'black'}}>Sign up</Nav.Link>
                         </Nav.Item>
+
+                        <Nav.Item>
+                            <Nav.Link href='/About' style={{color:'black'}}>About</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href='/Blog' style={{color:'black'}}>Blog</Nav.Link>
+                        </Nav.Item>
+                        
                     </>
                     }
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-        </Container>
+        {/* </Container> */}
+</header>
+  );
+}
+
+export default Header;
 
 
 
 
-{/* Old login */}
-      {/* <div className="logo">
+{/* 
+     <div className="logo">
         <Link to={'/'}> logo goes here </Link>
       </div>
       <div className="links">
@@ -81,13 +86,11 @@ const Header = (props) => {
               <li><Link to={'/login'}>Login</Link></li>
               <li><Link to={'/About'}>About</Link></li>
               <button><Link to={'/register'}>Sign-up</Link></button>
-
             </>
           }
         </ul>
-      </div> */}
-    </header>
-  );
-}
+      </div>  */}
 
-export default Header;
+
+
+

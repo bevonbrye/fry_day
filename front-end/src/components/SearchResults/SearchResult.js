@@ -3,7 +3,7 @@ import { Container, Image, Col, Row, Card, ListGroup} from 'react-bootstrap'
 import Rating from 'react-rating'
 
 
-
+// will use for futre implementation 
 
 function SearchResult() {
     return (

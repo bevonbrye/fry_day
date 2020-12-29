@@ -6,11 +6,11 @@ import { Carousel,Card} from 'react-bootstrap'
 function Carousels() {
     return (
         <div>
-        <Card>
+        <Card style={{margin:'1rem', borderRadius:'5px', height:'10rem'}}>
             <Carousel>
   <Carousel.Item interval={1000}>
     <img
-      className="d-block w-100"
+      className="d-block w-150"
       src="/img/fries-banner.png"
       alt="First slide"
     />
@@ -21,7 +21,7 @@ function Carousels() {
   </Carousel.Item>
   <Carousel.Item interval={500}>
     <img
-      className="d-block w-100"
+      className="d-block w-150"
       src="/img/fries-banner.png"
       alt="Third slide"
     />
@@ -32,7 +32,7 @@ function Carousels() {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="d-block w-150"
       src="/img/fries-banner.png"
       alt="Third slide"
     />

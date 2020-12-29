@@ -1,7 +1,6 @@
 import React from 'react'
 import './Restaurant.scss'
 import Review from './Review'
-// Variable hold yelp API data: 
 
 
 
@@ -26,11 +25,14 @@ class Business extends React.Component {
               <p>{`${this.props.restaurant.state} ${this.props.restaurant.zipCode}`}</p>
             </div>
             <div className="Restaurant-reviews">
-              <h3>{this.props.restaurant.category.toUpperCase()}</h3>
               <h3 className="rating">{`${this.props.restaurant.rating} stars`}</h3>
               <p>{`${this.props.restaurant.reviewCount} reviews`}</p>
             </div>
           </div>
+          <div className="Restaurant-number">
+            <h5><a >{this.props.restaurant.phone} </a></h5>
+          </div>
+
         <Review restaurantId ={this.props.restaurant.id}/>
         </div>
       );

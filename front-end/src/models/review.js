@@ -4,6 +4,7 @@ const URL = "http://localhost:4000/api/v1"
 
 export default class ReviewModel {
 
+    //---------------------------------------------------------------
     // static show = (resstaurantId) => {
     //     return fetch(`${ URL }/${ restaurantId }`).then(res => res.json())
     // }
@@ -18,10 +19,15 @@ export default class ReviewModel {
     //     return fetchedReviews
     //     }catch(e) {}
     // }
-
+    // ----------------------------------------------------------------
     static getAll = () => {
         return fetch(`${ URL }/reviews`).then(res => res.json())
     }
+
+    static show = (restaurantId) => {
+        return fetch(`${ URL }/reviews/${restaurantId}`).then(res => res.json())
+    }
+
 
     static create(reviewData) {
         return fetch(`${URL}/reviews`, {
@@ -34,8 +40,8 @@ export default class ReviewModel {
         }).then(res => res.json())
     }
 
-    static delete = (restaurantId) => {
-        return fetch(`${ URL }/reviews/${ restaurantId }`, {
+    static delete = (reviewId) => {
+        return fetch(`${ URL }/reviews/${ reviewId }`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
