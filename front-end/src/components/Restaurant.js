@@ -11,7 +11,6 @@ import Review from './Review'
 class Business extends React.Component {
     render() {
 
-
       return (
         <div className="Restaurant">
           <div className="image-container">
