@@ -34,14 +34,14 @@ class Search extends React.Component {
     }
 
     getSortByClass(sortByRestaurant){ 
-        if(sortByRestaurant === this.state.sortBy) { 
+        if(this.state.sortBy === sortByRestaurant ) { 
             return 'active';
         }
             return '';
     }
 
     handleSortByChange(sortByRestaurant) { 
-        this.setState({sortByRestaurant });
+        this.setState({sortBy: sortByRestaurant });
     }
 
     handleTermChange(event) {
@@ -60,10 +60,12 @@ class Search extends React.Component {
 
     renderSortByRestaurants() {
         return Object.keys(this.sortByRestaurants).map(sortByRestaurant => {
-            console.log(sortByRestaurant)
             let sortByRestaurantValue = this.sortByRestaurants[sortByRestaurant]; 
-            console.log(sortByRestaurantValue)
-            return <li key = {sortByRestaurantValue} onClick={this.handleSortByChange.bind(this, sortByRestaurantValue)} className={this.getSortByClass(sortByRestaurantValue)}>  {sortByRestaurant} </li>
+                return (<li className={this.getSortByClass(sortByRestaurantValue)}
+                    key={sortByRestaurantValue} 
+                    onClick={this.handleSortByChange.bind(this, sortByRestaurantValue)} >  
+                    {sortByRestaurant} 
+                </li>);
         })
     }
 
