@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import ReviewModel from '../models/review'
+import ReviewModel from '../../models/review'
 
 
 const Review = props => {

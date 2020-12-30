@@ -5,7 +5,7 @@ import Review from './Review'
 
 
 //class component renders the restaurant information: 
-//  form the creates review send rest ID and userId: 
+// form the creates review send rest ID and userId: 
 ///make fetch req to get reveiws: 
 
 class Business extends React.Component {

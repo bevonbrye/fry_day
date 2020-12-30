@@ -1,10 +1,8 @@
 import React from 'react';
-import RestaurantList from '../components/RestaurantList';
-import Search from '../components/Search'
+import RestaurantList from '../components/RestaurantInfo/RestaurantList';
+import Search from '../components/Search/Search'
 import Yelp from '../models/yapiref/yapi2'
 import BlogCards from '../components/Blogs/BlogCards'
-// import ReviewShow from '../components/ReviewShow'
-// import Carousel from '../components/Carousel'
 
 
 
