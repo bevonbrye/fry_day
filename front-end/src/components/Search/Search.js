@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Search.scss'
 import {Col} from 'react-bootstrap'
 
@@ -6,10 +6,10 @@ import {Col} from 'react-bootstrap'
 /* ----- Class Componant------ */
 
 
-const sortByRestaurants = {
-    'Highest Rated': 'rating',
-    'Most Reviewed': 'review_count'
-}
+// const sortByRestaurants = {
+//     'Highest Rated': 'rating',
+//     'Most Reviewed': 'review_count'
+// }
 
 class Search extends React.Component {
 
@@ -26,7 +26,7 @@ class Search extends React.Component {
           this.handleSearch = this.handleSearch.bind(this);
           this.handleSortByChange = this.handleSortByChange.bind(this);
 
-          this.sortByRestaurant = {
+          this.sortByRestaurants = {
             'Best Match': 'best_match',
             'Highest Rated': 'rating',
             'Most Reviewed': 'review_count'
@@ -59,9 +59,11 @@ class Search extends React.Component {
       }
 
     renderSortByRestaurants() {
-        return Object.keys(sortByRestaurants).map(sortByRestaurants => {
-            let sortByRestaurantValue = sortByRestaurants[sortByRestaurants]; 
-            return <li key = {sortByRestaurantValue} onClick={this.handleSortByChange.bind(this, sortByRestaurantValue)} className={this.getSortByClass(sortByRestaurantValue)}>  {sortByRestaurants} </li>
+        return Object.keys(this.sortByRestaurants).map(sortByRestaurant => {
+            console.log(sortByRestaurant)
+            let sortByRestaurantValue = this.sortByRestaurants[sortByRestaurant]; 
+            console.log(sortByRestaurantValue)
+            return <li key = {sortByRestaurantValue} onClick={this.handleSortByChange.bind(this, sortByRestaurantValue)} className={this.getSortByClass(sortByRestaurantValue)}>  {sortByRestaurant} </li>
         })
     }
 
@@ -80,7 +82,7 @@ class Search extends React.Component {
                </Col>
                <Col>
                   <div className="SearchBar-fields">
-                      <input placeholder="Search By Location" onChange={this.handleLocationChange} />
+                      <input placeholder="Search for Fries by Location..." onChange={this.handleLocationChange} />
                   </div>
                </Col>
                 
@@ -95,13 +97,13 @@ class Search extends React.Component {
 
 export default Search;
 
-{/* <img
+/* <img
                             alt=""
                             src="/img/ogo2.png"
                             width="87"
                             height="77"
                             className="logo"
-                        /> */}
+                        /> */
 /*---------- Hooks ------------- */
 
 // function Search (props) {

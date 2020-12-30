@@ -29,7 +29,7 @@ class Business extends React.Component {
             </div>
           </div>
           <div className="Restaurant-number">
-            <h5><a >{this.props.restaurant.phone} </a></h5>
+            <h5>{this.props.restaurant.phone} </h5>
           </div>
 
         <Review restaurantId ={this.props.restaurant.id}/>

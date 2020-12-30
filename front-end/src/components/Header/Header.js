@@ -69,7 +69,7 @@ export default Header;
 
 
 
-{/* 
+/* 
      <div className="logo">
         <Link to={'/'}> logo goes here </Link>
       </div>
@@ -88,7 +88,7 @@ export default Header;
             </>
           }
         </ul>
-      </div>  */}
+      </div>  */
 
 
 

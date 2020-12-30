@@ -5,11 +5,6 @@ import Yelp from '../models/yapiref/yapi2'
 import BlogCards from '../components/Blogs/BlogCards'
 
 
-
-
-
-
-
 class Home extends React.Component {
 
     constructor(props) {
@@ -29,7 +24,7 @@ class Home extends React.Component {
     }
 
     render() {
-
+        
         return ( 
           <div >
             <Search searchYelp = { this.searchYelp }/> 
