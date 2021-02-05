@@ -6,11 +6,6 @@ import {Col} from 'react-bootstrap'
 /* ----- Class Componant------ */
 
 
-// const sortByRestaurants = {
-//     'Highest Rated': 'rating',
-//     'Most Reviewed': 'review_count'
-// }
-
 class Search extends React.Component {
 
     constructor(props) { 
@@ -89,7 +84,7 @@ class Search extends React.Component {
                </Col>
                 
                 <div className="SearchBar-submit">
-                  <a href onClick={this.handleSearch}>Search</a>
+                  <a onClick={this.handleSearch}>Search</a>
                 </div>  
             </div>          
         )

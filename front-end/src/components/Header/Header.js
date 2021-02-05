@@ -6,14 +6,15 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 const Header = (props) => {
   return (
       <header>
-        <Navbar expand='xl'>
+        <Navbar expand='md' fixed='top' >
           <Navbar.Brand href="/">
                 <img
                     alt=""
                     src="/img/milogo2.png"
-                    width="87"
-                    height="77"
+                    width="120"
+                    height="107"
                     className="logo"
+                    
                 />
                 {/*''*/}
           </Navbar.Brand> 
@@ -40,18 +41,17 @@ const Header = (props) => {
                 :
                 <>
                     <Nav.Item>
-                        <Nav.Link href='/login' style={{color:'black'}}>Sign in </Nav.Link>
+                        <Nav.Link href='/login' style={{color:'black'}}>About</Nav.Link>
                     </Nav.Item>
 
-                    <Nav.Item>
-                        <Nav.Link href='/register' style={{color:'black'}}>Sign up</Nav.Link>
-                    </Nav.Item>
-
-                    <Nav.Item>
-                        <Nav.Link href='/About' style={{color:'black'}}>About</Nav.Link>
+                    <Nav.Item >
+                        <Nav.Link href='/register' style={{color:'black'}}>Blog</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link href='/Blog' style={{color:'black'}}>Blog</Nav.Link>
+                        <Nav.Link href='/About' style={{color:'black'}}>Sign in</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link href='/Blog' style={{color:'black'}}>Sign up</Nav.Link>
                     </Nav.Item>
                     
                 </>

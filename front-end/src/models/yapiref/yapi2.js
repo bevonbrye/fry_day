@@ -23,7 +23,6 @@ const Yelp = {
                     zipCode: business.location.zip_code,
                     rating: business.rating,
                     reviewCount: business.review_count,
-                    phone: business.display_phone
                 }));
             }
         });
